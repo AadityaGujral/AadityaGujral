@@ -1,7 +1,6 @@
 <h1 align="center">Hi 👋, I'm Aditya Gujral</h1>
 <h3 align="center">A passionate Business Analytics current pursuing MBA</h3>
 
-<img align ="right" alt = "coding" width = "400" src = "https://tenor.com/view/the-hacker-matrix-code-hacking-gif-16778252">
 
 - 🔭 I’m currently working on **Global Data on Powerbi**
 
