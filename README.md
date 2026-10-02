@@ -15,6 +15,12 @@ My current portfolio explores **collections performance and credit risk** with r
 | **Excel · Collections dashboard** | How can a manager track recovery, collector performance, and forecasts? | [Workbook, native charts, and validation](portfolio/excel_collections/) |
 | **Power BI · Collections report** | How do recovery, collector reach, and aging exposure connect? | [Four-page native project and semantic model](portfolio/powerbi_collections/) |
 
+## Interactive machine learning app
+
+**[Open Credit Risk Lab ↗](https://aditya-credit-risk-lab.aditya-gujral91.chatgpt.site)** · [Source code and validation](portfolio/python_credit_risk/app/)
+
+Score synthetic accounts with logistic regression or random forest, explore threshold tradeoffs, inspect explanations, and download a prioritized review queue. The hosted app currently uses private owner access; the source is public and can run locally.
+
 ## A shared collections view
 
 The SQL, Excel, and Power BI projects reconcile to the same June 30, 2026 synthetic snapshot.

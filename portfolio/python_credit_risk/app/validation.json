@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "parityRows": 1495,
+  "maximumProbabilityError": {
+    "logistic": 2.220446049250313e-16,
+    "forest": 0
+  },
+  "checks": [
+    "original Python predictions reproduced",
+    "browser logistic and forest inference parity",
+    "missing income imputation",
+    "signed logistic contributions",
+    "invalid inputs rejected",
+    "holdout confusion matrix reconciliation",
+    "threshold boundary and monotonicity",
+    "500 account queue sorting and filtering",
+    "CSV row count and metadata",
+    "static assets and main controls"
+  ],
+  "limitations": [
+    "No native browser rendering test in this environment",
+    "WebMCP registration validation unavailable in a supported browser context"
+  ]
+}

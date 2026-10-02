@@ -85,3 +85,7 @@ Developed a Python delinquency-risk portfolio using pandas and scikit-learn with
 - [scikit-learn: leakage and pipelines](https://scikit-learn.org/stable/common_pitfalls.html#data-leakage)
 - [scikit-learn: classification metrics](https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics)
 - [scikit-learn: permutation importance](https://scikit-learn.org/stable/modules/permutation_importance.html)
+
+## Interactive application
+
+[Open Credit Risk Lab](https://aditya-credit-risk-lab.aditya-gujral91.chatgpt.site) (private owner access) or [inspect the application source](app/). The app runs exported versions of both original training-only models, compares test metrics, explores threshold tradeoffs and exports scores for 500 unlabeled accounts. Browser inference was reconciled with Python across 1,495 records; see [application validation](app/validation.json).
