@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "snapshot": "2026-06-30",
+  "tables": {
+    "collectors": 7,
+    "customers": 1200,
+    "accounts": 1500,
+    "payments": 3010,
+    "contact_attempts": 6013
+  },
+  "queries_executed": 20,
+  "query_row_counts": {
+    "Q01": 1,
+    "Q02": 4,
+    "Q03": 6,
+    "Q04": 6,
+    "Q05": 7,
+    "Q06": 6,
+    "Q07": 6,
+    "Q08": 270,
+    "Q09": 278,
+    "Q10": 276,
+    "Q11": 4,
+    "Q12": 3,
+    "Q13": 25,
+    "Q14": 1500,
+    "Q15": 1500,
+    "Q16": 4,
+    "Q17": 5,
+    "Q18": 1,
+    "Q19": 1,
+    "Q20": 4
+  },
+  "checks": [
+    "integrity",
+    "foreign keys",
+    "account grain",
+    "payment reconciliation",
+    "nonnegative balance",
+    "payment dates",
+    "fanout fixture",
+    "zero activity fixture"
+  ]
+}
