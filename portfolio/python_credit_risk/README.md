@@ -88,4 +88,6 @@ Developed a Python delinquency-risk portfolio using pandas and scikit-learn with
 
 ## Interactive application
 
-[Open Credit Risk Lab](https://aditya-credit-risk-lab.aditya-gujral91.chatgpt.site) (private owner access) or [inspect the application source](app/). The app runs exported versions of both original training-only models, compares test metrics, explores threshold tradeoffs and exports scores for 500 unlabeled accounts. Browser inference was reconciled with Python across 1,495 records; see [application validation](app/validation.json).
+[Open Credit Risk Lab](https://aditya-credit-risk-lab.aditya-gujral91.chatgpt.site) (public access) or [inspect the application source](app/). The app runs exported versions of both original training-only models, compares test metrics, explores threshold tradeoffs and exports scores for 500 unlabeled accounts. Browser inference was reconciled with Python across 1,495 records; see [application validation](app/validation.json).
+
+[One-page Credit Risk Lab case study](Credit_Risk_Lab_Case_Study.pdf).

@@ -2,7 +2,7 @@
 
 <p align="center"><a href="https://www.linkedin.com/in/aditya-gujral-b45618185/">LinkedIn</a> · <a href="mailto:aditya.gujral91@gmail.com">Email</a> · <a href="#featured-projects">Explore my work</a></p>
 
-I’m Aditya Gujral, an MBA student focused on business analytics. I’m building practical skills in SQL, Python, Excel, and Power BI through projects that connect data quality, analysis, and business decisions.
+I’m Aditya Gujral, an MBA graduate working in collections and business analytics. I’m building practical skills in SQL, Python, Excel, and Power BI through projects that connect data quality, analysis, and business decisions.
 
 My current portfolio explores **collections performance and credit risk** with reproducible synthetic data. Each project includes its source files, methodology, and validation notes.
 
@@ -19,7 +19,9 @@ My current portfolio explores **collections performance and credit risk** with r
 
 **[Open Credit Risk Lab ↗](https://aditya-credit-risk-lab.aditya-gujral91.chatgpt.site)** · [Source code and validation](portfolio/python_credit_risk/app/)
 
-Score synthetic accounts with logistic regression or random forest, explore threshold tradeoffs, inspect explanations, and download a prioritized review queue. The hosted app currently uses private owner access; the source is public and can run locally.
+Score synthetic accounts with logistic regression or random forest, explore threshold tradeoffs, inspect explanations, and download a prioritized review queue. The hosted app is public, and its source can also run locally.
+
+[Read the one-page Credit Risk Lab case study](portfolio/python_credit_risk/Credit_Risk_Lab_Case_Study.pdf).
 
 ## A shared collections view
 
