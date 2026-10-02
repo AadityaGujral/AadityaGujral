@@ -1,0 +1,47 @@
+{
+  "dataset": "100% synthetic; independent from SQL dataset",
+  "target": "Simulated transition to 90+ DPD within 90 days; not legal default",
+  "selection_metric": "validation ROC-AUC",
+  "selected_model": "Logistic Regression",
+  "threshold": 0.26,
+  "threshold_objective": "validation F2 on fixed 0.10-0.80 grid",
+  "splits": {
+    "train": {
+      "rows": 1430,
+      "start": "2025-01-01",
+      "end": "2025-03-31",
+      "outcome_end": "2025-06-29",
+      "prevalence": 0.5146853146853146
+    },
+    "validation": {
+      "rows": 508,
+      "start": "2025-07-01",
+      "end": "2025-07-31",
+      "outcome_end": "2025-10-29",
+      "prevalence": 0.5039370078740157
+    },
+    "test": {
+      "rows": 995,
+      "start": "2025-11-01",
+      "end": "2025-12-31",
+      "outcome_end": "2026-03-31",
+      "prevalence": 0.5185929648241207
+    }
+  },
+  "excluded_embargo_rows": 3067,
+  "scored_unlabeled_accounts": 500,
+  "checks": [
+    "unique account/customer grain",
+    "mature outcomes before next split",
+    "no customer overlap",
+    "target excluded from features",
+    "both classes in each split",
+    "live set unlabeled and disjoint"
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0"
+  }
+}

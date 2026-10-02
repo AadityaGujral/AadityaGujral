@@ -1,22 +1,26 @@
-"""Generate the synthetic collections dataset used across this portfolio."""
-import numpy as np, pandas as pd
-rng=np.random.default_rng(42); n=1500
-df=pd.DataFrame({
-"account_id":[f"A{i:05d}" for i in range(1,n+1)],
-"portfolio":rng.choice(["Credit Card","Medical","Personal Loan","Auto"],n,p=[.4,.2,.25,.15]),
-"collector":rng.choice(["Alex","Jordan","Taylor","Morgan","Casey","Riley"],n),
-"original_balance":np.round(rng.uniform(500,25000,n),2),
-"days_past_due":rng.integers(1,181,n),"contact_attempts":rng.integers(0,16,n),
-"rpc_count":rng.integers(0,7,n),"monthly_income":np.round(rng.normal(5200,1800,n).clip(1500,15000),2),
-"credit_score":rng.normal(650,75,n).clip(420,830).astype(int)})
-risk=-2+.013*df.days_past_due+.10*df.contact_attempts-.004*(df.credit_score-600)-.00012*(df.monthly_income-4000)
-df["default_flag"]=(rng.random(n)<1/(1+np.exp(-risk))).astype(int)
-pay=(.55-.0017*df.days_past_due+.00055*(df.credit_score-550)+rng.normal(0,.13,n)).clip(0,.95)
-df["amount_collected"]=np.round(df.original_balance*pay*(1-.45*df.default_flag),2)
-df["current_balance"]=np.round((df.original_balance-df.amount_collected).clip(0),2)
-df["settlement_flag"]=((df.amount_collected/df.original_balance>.55)&(rng.random(n)>.45)).astype(int)
-df["promise_to_pay"]=((df.rpc_count>0)&(rng.random(n)>.38)).astype(int)
-df["aging_bucket"]=pd.cut(df.days_past_due,[0,30,60,90,120,999],labels=["1-30","31-60","61-90","91-120","120+"]).astype(str)
-df["snapshot_date"]="2026-09-30"
-df.to_csv("data/credit_risk_accounts.csv",index=False)
-print("Created",len(df),"synthetic accounts")
+"""Fictional account snapshots and 90-day outcomes, never employer data."""
+from pathlib import Path
+import numpy as np
+import pandas as pd
+ROOT=Path(__file__).resolve().parent
+FEATURES=['days_past_due','credit_score','monthly_income','balance','utilization','missed_payments_6m','portfolio']
+def generate(n=6000,seed=42,live=False):
+    r=np.random.default_rng(seed)
+    score=r.integers(420,821,n);dpd=r.integers(0,90,n)
+    income=np.round(r.lognormal(8.4,.45,n),2);balance=np.round(r.uniform(500,25000,n),2)
+    util=np.round(r.beta(3,2,n),4);missed=r.poisson(1.2,n)
+    # Deliberately imperfect signal + unobserved shock: simulation, not an empirical model.
+    z=-2.5+(650-score)/130+dpd/65+1.3*util+.3*missed+.35*np.log1p(balance/income)+r.normal(0,.8,n)
+    event=r.binomial(1,1/(1+np.exp(-z)))
+    snapshots=pd.to_datetime(['2026-06-30']*n) if live else pd.Timestamp('2025-01-01')+pd.to_timedelta(r.integers(0,365,n),unit='D')
+    df=pd.DataFrame({'account_id':np.arange(10001 if live else 1,(10001 if live else 1)+n),'customer_id':np.arange(10001 if live else 1,(10001 if live else 1)+n),'snapshot_date':snapshots,'days_past_due':dpd,'credit_score':score,'monthly_income':income,'balance':balance,'utilization':util,'missed_payments_6m':missed,'portfolio':r.choice(['Credit Card','Auto','Personal Loan','Medical'],n)})
+    if not live:
+        df['outcome_end_date']=df.snapshot_date+pd.Timedelta(days=90)
+        df['future_90dpd']=event
+    # A small amount of missing income tests training-only imputation.
+    df.loc[r.random(n)<.025,'monthly_income']=np.nan
+    return df
+if __name__=='__main__':
+    (ROOT/'data').mkdir(exist_ok=True)
+    generate().to_csv(ROOT/'data/historical_snapshots.csv',index=False)
+    generate(500,84,True).to_csv(ROOT/'data/scoring_accounts.csv',index=False)

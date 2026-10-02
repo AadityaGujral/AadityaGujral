@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "independent rank-based AUC for all three models",
+    "all exported confusion matrix counts",
+    "500 unique unlabeled scores",
+    "probability bounds",
+    "score ranking",
+    "score/test account disjointness"
+  ]
+}
