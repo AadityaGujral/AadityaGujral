@@ -1,0 +1,35 @@
+{
+  "source": "SQL collections project, seed 42",
+  "accounts": 1500,
+  "payments": 3010,
+  "kpis": [
+    1500,
+    18510620.97000002,
+    2346315.94,
+    16164305.03,
+    0.1267551177133739,
+    10310701.72999999,
+    0.7213333333333334,
+    998.8573605789697
+  ],
+  "checks": [
+    "SQL control reconciliation",
+    "growth assumption update",
+    "zero growth",
+    "missing growth input",
+    "formula error scan",
+    "numeric collector rankings",
+    "export/import KPI reconciliation",
+    "chart geometry correction"
+  ],
+  "engine": "Artifact Tool; native Excel not available",
+  "formula_errors": 0,
+  "export_checks": [
+    "two native charts with Analysis formula bindings",
+    "two filterable tables",
+    "blue series and line styling",
+    "frozen source panes",
+    "no exported error cells",
+    "cached collected KPI reconciles"
+  ]
+}
