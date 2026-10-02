@@ -1,0 +1,1 @@
+# Collections & Credit Risk Executive Dashboard — Power BI\n\nPower BI portfolio project using a reproducible synthetic collections dataset. See `measures.md` for DAX and `dashboard_spec.md` for the four-page report design. The same dataset can be generated with `../python_credit_risk/generate_data.py`.\n\nNo employer or customer data is used.\n
