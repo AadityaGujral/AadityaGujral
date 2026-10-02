@@ -1,0 +1,79 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "Executive06",
+  "position": {
+    "x": 24,
+    "y": 170,
+    "width": 1232,
+    "height": 110,
+    "z": 6,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Accounts"
+                    }
+                  },
+                  "Property": "Total Placed"
+                }
+              },
+              "queryRef": "Accounts.Total Placed",
+              "nativeQueryRef": "Total Placed"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Accounts"
+                    }
+                  },
+                  "Property": "Total Collected"
+                }
+              },
+              "queryRef": "Accounts.Total Collected",
+              "nativeQueryRef": "Total Collected"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Accounts"
+                    }
+                  },
+                  "Property": "Outstanding Balance"
+                }
+              },
+              "queryRef": "Accounts.Outstanding Balance",
+              "nativeQueryRef": "Outstanding Balance"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Accounts"
+                    }
+                  },
+                  "Property": "Recovery Rate"
+                }
+              },
+              "queryRef": "Accounts.Recovery Rate",
+              "nativeQueryRef": "Recovery Rate"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

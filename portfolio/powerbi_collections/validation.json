@@ -1,0 +1,21 @@
+{
+  "schema_files_validated": 47,
+  "visuals": 37,
+  "tables": {
+    "Accounts": 1500,
+    "Payments": 3010,
+    "Contacts": 6013,
+    "Collectors": 7,
+    "Dates": 181
+  },
+  "sql_reconciliation": {
+    "accounts": 1500,
+    "placed": 18510620.97,
+    "collected": 2346315.94,
+    "outstanding": 16164305.03,
+    "90_plus": 10310701.73,
+    "rpc_coverage": 0.7213333333333334
+  },
+  "status": "Schema, bindings, relationships, embedded data and SQL controls passed",
+  "desktop_status": "Not opened, refreshed, rendered or DAX-compiled in Power BI Desktop"
+}

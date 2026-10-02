@@ -1,0 +1,31 @@
+{
+  "name": "CollectionsTheme",
+  "dataColors": [
+    "#137C80",
+    "#365B9A",
+    "#E9A23B",
+    "#7355A5",
+    "#26B49A",
+    "#B85A67"
+  ],
+  "background": "#F3F6FA",
+  "foreground": "#18344C",
+  "tableAccent": "#137C80",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI",
+      "fontSize": 12,
+      "color": "#18344C"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 11,
+      "color": "#426174"
+    },
+    "callout": {
+      "fontFace": "Segoe UI",
+      "fontSize": 28,
+      "color": "#18344C"
+    }
+  }
+}

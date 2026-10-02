@@ -1,18 +1,45 @@
-<h1 align="center">Hi 👋, I'm Aditya Gujral</h1>
-<h3 align="center">A passionate Business Analytics current pursuing MBA</h3>
+![Aditya Gujral — Business Analytics Portfolio](portfolio/assets/profile-banner.svg)
 
+<p align="center"><a href="https://www.linkedin.com/in/aditya-gujral-b45618185/">LinkedIn</a> · <a href="mailto:aditya.gujral91@gmail.com">Email</a> · <a href="#featured-projects">Explore my work</a></p>
 
-- 🔭 I’m currently working on **Global Data on Powerbi**
+I’m Aditya Gujral, an MBA student focused on business analytics. I’m building practical skills in SQL, Python, Excel, and Power BI through projects that connect data quality, analysis, and business decisions.
 
-- 🌱 I’m currently learning **Python,SQL,Powebi to Advance My skills**
+My current portfolio explores **collections performance and credit risk** with reproducible synthetic data. Each project includes its source files, methodology, and validation notes.
 
-- 📫 How to reach me **aditya.gujral91@gmail.com**
+## Featured projects
 
-- 📄 Know about my experiences [https://www.linkedin.com/in/aditya-gujral-b45618185/](https://www.linkedin.com/in/aditya-gujral-b45618185/)
+| Project | Business question | Explore |
+|---|---|---|
+| **SQL · Collections performance** | Where are recoveries strongest, and which accounts need attention? | [20 analytical queries, database, and findings](portfolio/sql_collections/) |
+| **Python · Credit risk modeling** | Can account features help identify future 90+ day delinquency? | [Notebook, temporal validation, and model comparisons](portfolio/python_credit_risk/) |
+| **Excel · Collections dashboard** | How can a manager track recovery, collector performance, and forecasts? | [Workbook, native charts, and validation](portfolio/excel_collections/) |
+| **Power BI · Collections report** | How do recovery, collector reach, and aging exposure connect? | [Four-page native project and semantic model](portfolio/powerbi_collections/) |
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+## A shared collections view
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+The SQL, Excel, and Power BI projects reconcile to the same June 30, 2026 synthetic snapshot.
+
+| Assigned accounts | Placed balance | Collected | Recovery rate |
+|---:|---:|---:|---:|
+| 1,500 | $18.51M | $2.35M | 12.68% |
+
+The Python project uses a separate synthetic dataset and a time-based evaluation design. Its predictions are not attached to the collections dashboard.
+
+## How I approach analysis
+
+**Check the data → define the metric → investigate the pattern → communicate the decision.**
+
+I focus on avoiding double-counting, making denominators explicit, separating training and evaluation periods, and keeping calculations reproducible.
+
+## Tools and learning
+
+**SQL** · joins, aggregations, window functions, data quality  
+**Python** · pandas, scikit-learn, notebooks, model evaluation  
+**Excel** · formulas, tables, charts, scenario forecasts  
+**Power BI** · report definitions, relationships, DAX measures
+
+All portfolio data is synthetic. The Power BI project has passed schema and data checks; opening, refreshing, DAX compilation, and visual rendering in Power BI Desktop remain pending.
+
+---
+
+Interested in analytics, collections, or credit risk? [Connect on LinkedIn](https://www.linkedin.com/in/aditya-gujral-b45618185/) or [email me](mailto:aditya.gujral91@gmail.com).
