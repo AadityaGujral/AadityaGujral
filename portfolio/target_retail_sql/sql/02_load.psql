@@ -1,0 +1,8 @@
+\set ON_ERROR_STOP on
+-- Invoke from the project root: psql "$DATABASE_URL" -f sql/02_load.psql
+\copy categories FROM 'data/categories.csv' WITH (FORMAT CSV, HEADER true)
+\copy stores FROM 'data/stores.csv' WITH (FORMAT CSV, HEADER true)
+\copy customers FROM 'data/customers.csv' WITH (FORMAT CSV, HEADER true)
+\copy products FROM 'data/products.csv' WITH (FORMAT CSV, HEADER true)
+\copy orders FROM 'data/orders.csv' WITH (FORMAT CSV, HEADER true)
+\copy order_items FROM 'data/order_items.csv' WITH (FORMAT CSV, HEADER true)

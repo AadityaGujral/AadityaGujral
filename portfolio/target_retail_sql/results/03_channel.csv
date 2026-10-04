@@ -1,0 +1,4 @@
+channel,orders,net_sales_usd,aov_usd,margin_pct
+store,75965,24805306.44,326.54,30.53
+pickup,25811,8371018.15,324.32,30.53
+delivery,15304,5004612.87,327.01,30.37

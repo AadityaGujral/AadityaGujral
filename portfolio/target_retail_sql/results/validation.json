@@ -1,0 +1,60 @@
+{
+  "engine": "DuckDB 1.5.6",
+  "counts": {
+    "categories": 6,
+    "stores": 24,
+    "customers": 10000,
+    "products": 300,
+    "orders": 120000,
+    "order_items": 360012
+  },
+  "queries_executed": 25,
+  "quality_checks": [
+    {
+      "check_name": "orders_without_lines",
+      "violations": 0
+    },
+    {
+      "check_name": "purchase_before_signup",
+      "violations": 0
+    },
+    {
+      "check_name": "cancelled_returns",
+      "violations": 0
+    },
+    {
+      "check_name": "orphan_customers",
+      "violations": 0
+    },
+    {
+      "check_name": "orphan_stores",
+      "violations": 0
+    },
+    {
+      "check_name": "orphan_products",
+      "violations": 0
+    },
+    {
+      "check_name": "duplicate_products_in_basket",
+      "violations": 0
+    },
+    {
+      "check_name": "missing_months",
+      "violations": 0
+    },
+    {
+      "check_name": "out_of_period",
+      "violations": 0
+    },
+    {
+      "check_name": "order_grain_mismatch",
+      "violations": 0
+    },
+    {
+      "check_name": "sales_reconciliation",
+      "violations": 0
+    }
+  ],
+  "independent_raw_csv_reconciliation": "PASS",
+  "postgresql_native_execution": "Not executed in this environment"
+}
