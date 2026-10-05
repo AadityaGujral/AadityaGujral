@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "method": "Python standard-library CSV + Decimal; no pandas aggregation",
+  "checks": {
+    "raw_csv_holdout_membership_and_amounts": true,
+    "independent_wape_bias_denominators": true
+  },
+  "evaluated_line_origin_cells": 36,
+  "pooled_absolute_error_usd": "1451344.188281163",
+  "pooled_actual_payment_usd": "77345884.58",
+  "pooled_wape_pct": "1.876433628191317790731251858"
+}

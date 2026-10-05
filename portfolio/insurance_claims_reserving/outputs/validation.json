@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "data_checks": {
+    "raw_csv_paid_reconciliation": true,
+    "raw_csv_payment_count": true,
+    "independent_development_factor_reconciliation": true,
+    "independent_reserve_product_reconciliation": true,
+    "future_cashflow_equals_base_reserve": true,
+    "nonnegative_reserve": true,
+    "observed_dates_only": true,
+    "unknown_future_cells_preserved": true,
+    "unique_registry_claims": true,
+    "registry_keys_and_attributes_match": true,
+    "complete_simulation_cents_reconcile": true,
+    "future_holdout_disjoint": true
+  },
+  "passed_data_checks": 12,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  },
+  "seed": 20261005,
+  "valuation_date": "2025-12-31",
+  "backtest_training_cutoffs": [
+    2023,
+    2024
+  ],
+  "truth_used_for_estimation": false,
+  "unit_tests": {
+    "run": 8,
+    "failures": 0,
+    "errors": 0
+  },
+  "independent_backtest_checks": {
+    "raw_csv_holdout_membership_and_amounts": true,
+    "independent_wape_bias_denominators": true
+  },
+  "input_sha256": {
+    "claims.csv": "6de15c472deeee0b14a4af3ab788c4b034eaf0ef4d0139c4714a92993bb3436f",
+    "observed_payments.csv": "47c868d0039f3f6dbabc6481061290d3544ff3a41890b94b5487a55e7ce5c909"
+  },
+  "uncertainty": "Point estimates and deterministic scenarios only; no probabilistic interval"
+}

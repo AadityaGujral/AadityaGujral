@@ -1,0 +1,9 @@
+scenario,line,outstanding_estimate_usd
+Base,Auto,36425415.43216873
+Base,Liability,102526411.27629077
+Development excess -5%,Auto,34207678.56875710
+Development excess -5%,Liability,94868087.45012742
+Development excess +5%,Auto,38690565.93573917
+Development excess +5%,Liability,110540779.46605721
+Additional 2% ultimate tail,Auto,40526598.75321210
+Additional 2% ultimate tail,Liability,108682074.43581659

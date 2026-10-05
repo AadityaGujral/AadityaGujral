@@ -1,0 +1,8 @@
+{
+  "format_valid": true,
+  "executed_code_cells": 6,
+  "errors": 0,
+  "execution_route": "Fresh Python subprocess; sequential code-cell execution",
+  "kernel_limitation": "RuntimeError: Kernel died before replying to kernel_info",
+  "visual_inspection": "Figure PNGs inspected separately; complete notebook viewer not available"
+}
