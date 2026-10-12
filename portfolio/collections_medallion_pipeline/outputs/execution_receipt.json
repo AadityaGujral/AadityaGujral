@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "independent_reconciliations_passed": 12,
+  "contract_tests_run": 8,
+  "contract_test_failures": 0,
+  "contract_test_errors": 0,
+  "notebook_code_cells_executed": 4,
+  "notebook_execution_errors": 0,
+  "spark_version": "4.0.1",
+  "spark_master": "local[2]",
+  "python_version": "3.12.14"
+}

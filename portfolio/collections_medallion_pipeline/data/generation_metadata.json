@@ -1,0 +1,14 @@
+{
+  "seed": 20261012,
+  "accounts": 50000,
+  "canonical_events": 300000,
+  "batch_01_rows": 204000,
+  "batch_02_rows": 96275,
+  "intentional_duplicate_rows": 272,
+  "intentional_invalid_rows": 3,
+  "period": [
+    "2025-01-01",
+    "2025-12-31"
+  ],
+  "fully_synthetic": true
+}

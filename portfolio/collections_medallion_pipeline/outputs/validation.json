@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checks": {
+    "canonical_event_count": true,
+    "intentional_invalid_count": true,
+    "duplicate_delivery_removed": true,
+    "payment_event_count": true,
+    "contact_event_count": true,
+    "payment_cents_reconciled": true,
+    "active_accounts_reconciled": true,
+    "starting_balance_reconciled": true,
+    "remaining_balance_reconciled": true,
+    "channel_mart_reconciled": true,
+    "monthly_mart_reconciled": true,
+    "silver_key_uniqueness": true
+  },
+  "passed_checks": 12,
+  "method": "Python standard library from raw CSV/JSONL; independent of Spark aggregations",
+  "raw_deliveries": 300275,
+  "canonical_events": 300000,
+  "quarantine_reasons": {
+    "invalid_amount": 1,
+    "invalid_timestamp": 1,
+    "unknown_account": 1
+  },
+  "input_sha256": {
+    "data/raw/accounts.csv": "4deccc12862a0aa163acc66da1a2f93b070e50f5ed1cece67c2ba42b2ddcf55f",
+    "data/raw/batch_01/events_001.jsonl": "236c97ca5d82373560a2c850b3f81a652a8a72953ee8faaa92d4d7a15a05f276",
+    "data/raw/batch_01/events_002.jsonl": "3846d25c62626e37769902474c8eafc88423c129fa8d398a31b3f62ca4d05983",
+    "data/raw/batch_01/events_003.jsonl": "471f8fbc50b53c5117a53931afd834b7b4b45634ee9389bdf2d804d209ce4d89",
+    "data/raw/batch_02/events_001.jsonl": "85ff1ffb59d30585a5f72db3d0d74ceafe7f32ed9db98dc83dcaf3acfdb23d65"
+  }
+}

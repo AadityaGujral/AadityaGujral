@@ -1,0 +1,1 @@
+"""Synthetic collections medallion pipeline."""

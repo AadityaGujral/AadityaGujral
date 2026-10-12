@@ -1,0 +1,18 @@
+[
+  {
+    "batch": "batch_01",
+    "raw_rows": 204000,
+    "accepted_rows_before_cross_batch_dedup": 204000,
+    "quarantined_rows": 0,
+    "silver_rows_after_merge": 204000,
+    "distinct_event_ids_after_merge": 204000
+  },
+  {
+    "batch": "batch_02",
+    "raw_rows": 96275,
+    "accepted_rows_before_cross_batch_dedup": 96272,
+    "quarantined_rows": 3,
+    "silver_rows_after_merge": 300000,
+    "distinct_event_ids_after_merge": 300000
+  }
+]

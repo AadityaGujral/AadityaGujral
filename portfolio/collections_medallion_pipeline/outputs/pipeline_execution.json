@@ -1,0 +1,33 @@
+{
+  "batches": [
+    {
+      "batch": "batch_01",
+      "raw_rows": 204000,
+      "accepted_rows_before_cross_batch_dedup": 204000,
+      "quarantined_rows": 0,
+      "silver_rows_after_merge": 204000,
+      "distinct_event_ids_after_merge": 204000
+    },
+    {
+      "batch": "batch_02",
+      "raw_rows": 96275,
+      "accepted_rows_before_cross_batch_dedup": 96272,
+      "quarantined_rows": 3,
+      "silver_rows_after_merge": 300000,
+      "distinct_event_ids_after_merge": 300000
+    }
+  ],
+  "summary": {
+    "starting_balance_cents": 50511740157,
+    "payments_cents": 2529859035,
+    "remaining_balance_cents": 47981881122,
+    "accounts": 49896,
+    "events": 300000,
+    "payment_events": 83373,
+    "contact_events": 216627
+  },
+  "spark_version": "4.0.1",
+  "spark_master": "local[2]",
+  "python_version": "3.12.14",
+  "shuffle_partitions": "8"
+}
