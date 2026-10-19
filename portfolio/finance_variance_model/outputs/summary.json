@@ -1,0 +1,48 @@
+{
+  "totals": {
+    "budget_units": 536400,
+    "actual_units": 545100,
+    "budget_revenue_cents": 6465600000,
+    "actual_revenue_cents": 6584028015,
+    "budget_margin_cents": 2911920000,
+    "actual_margin_cents": 2868074499,
+    "volume_effect_cents": 47252800,
+    "price_effect_cents": 13516515,
+    "cost_effect_cents": -104614816
+  },
+  "by_unit": {
+    "Consumer": {
+      "budget_units": 169200,
+      "actual_units": 164767,
+      "budget_revenue_cents": 1776600000,
+      "actual_revenue_cents": 1714394301,
+      "budget_margin_cents": 778320000,
+      "actual_margin_cents": 668468170,
+      "volume_effect_cents": -20391800,
+      "price_effect_cents": -15659199,
+      "cost_effect_cents": -73800831
+    },
+    "Enterprise": {
+      "budget_units": 178800,
+      "actual_units": 196025,
+      "budget_revenue_cents": 2145600000,
+      "actual_revenue_cents": 2333705590,
+      "budget_margin_cents": 965520000,
+      "actual_margin_cents": 1024352077,
+      "volume_effect_cents": 93015000,
+      "price_effect_cents": -18594410,
+      "cost_effect_cents": -15588513
+    },
+    "Partner": {
+      "budget_units": 188400,
+      "actual_units": 184308,
+      "budget_revenue_cents": 2543400000,
+      "actual_revenue_cents": 2535928124,
+      "budget_margin_cents": 1168080000,
+      "actual_margin_cents": 1175254252,
+      "volume_effect_cents": -25370400,
+      "price_effect_cents": 47770124,
+      "cost_effect_cents": -15225472
+    }
+  }
+}

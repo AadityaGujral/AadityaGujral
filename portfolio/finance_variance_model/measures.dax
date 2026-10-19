@@ -1,0 +1,10 @@
+// Create each measure separately in Power BI Desktop. Not executed here.
+Actual Revenue = SUMX(fact_actual, fact_actual[units] * fact_actual[price_cents]) / 100
+Actual Cost = SUMX(fact_actual, fact_actual[units] * fact_actual[cost_cents]) / 100
+Actual Margin = [Actual Revenue] - [Actual Cost]
+Budget Revenue = SUMX(fact_plan, fact_plan[units] * fact_plan[price_cents]) / 100
+Budget Margin = SUMX(fact_plan, fact_plan[units] * (fact_plan[price_cents] - fact_plan[cost_cents])) / 100
+Margin Variance = [Actual Margin] - [Budget Margin]
+Margin Variance % = DIVIDE([Margin Variance], [Budget Margin])
+Actual Margin % = DIVIDE([Actual Margin], [Actual Revenue])
+Budget Margin % = DIVIDE([Budget Margin], [Budget Revenue])

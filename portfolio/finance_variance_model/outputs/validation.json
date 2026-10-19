@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": {
+    "foreign_keys": true,
+    "complete_plan_grid": true,
+    "actual_grain": true,
+    "bridge_grain": true,
+    "all_cells_reconciled": true,
+    "exact_bridge_identity": true,
+    "raw_revenue_reconciled": true,
+    "raw_margin_reconciled": true,
+    "fanout_regression": true,
+    "duplicate_rejected": true,
+    "orphan_rejected": true
+  },
+  "sqlite_version": "3.53.1",
+  "seed": 20261019,
+  "source_sha256": "578570687f7b671a00aa7a8a0b7d934fdac6fb5573acd3ab0d36da5aee52a0c3",
+  "power_bi_execution": "Not executed; import recipe and DAX supplied for manual validation."
+}
